@@ -8,5 +8,5 @@ def test_that_something():
 
 
 @patch("patch_test.config.foo_settings.function_to_get_something", return_value="hola")
-def test_that_something_fn(p):
+def test_that_something_fn(_p):
     assert "The setting is hola" == something.something_w_fn()
